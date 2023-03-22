@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<data>
+    <import type="android.view.View" />
+    <variable
+        name="hono"
+        type="com.example.appapi.HonoItems.Data" />
+</data>
+
+
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewId"
+                    android:textSize="18sp"
+                    android:textColor="#1A1A1A"
+                    android:text="@{hono.language_Code}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@{hono.Name}"
+
+                    android:id="@+id/textViewLanguage"
+                    android:layout_below="@id/textViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/button_click"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:text="@string/info"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+            </RelativeLayout>
+
+
+
+</layout>
+
+
+
